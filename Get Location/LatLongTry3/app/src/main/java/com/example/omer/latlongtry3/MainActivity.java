@@ -37,16 +37,20 @@ public class MainActivity extends AppCompatActivity implements com.google.androi
 
         LocationManager lm = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         Location location = lm.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-        Log.d(TAG, "onCreate: Loc   :   "+location);
+        Log.d(TAG, "onCreate:   GPS Loc   :   "+location);
         if(location==null){
             location = lm.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-            Log.d(TAG, "onCreate: Location  "+  location );
+            Log.d(TAG, "onCreate:   Network Location  "+  location );
+            if (location    ==  null){
+                location    =   lm.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
+                Log.d(TAG, "onCreate:   Passive Location    :   "+location );
+            }
         }
     }
 
 
     @Override
     public void onLocationChanged(Location location) {
-        
+
     }
 }
