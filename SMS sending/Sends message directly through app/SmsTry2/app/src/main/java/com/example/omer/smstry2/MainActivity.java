@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnSendSms.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendSMS("+923422909081","Hi hello");
+                sendSMS("+1234567890","Hi hello");
             }
         });
     }
