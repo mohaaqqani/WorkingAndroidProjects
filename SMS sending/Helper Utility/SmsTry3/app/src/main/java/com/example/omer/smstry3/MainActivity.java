@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         smsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                SMSUtils.sendSMS(getBaseContext(),"+1234567890","hello");
+                SMSUtils.sendSMS(getBaseContext(),"+923422909081","hello");
             }
         });
     }

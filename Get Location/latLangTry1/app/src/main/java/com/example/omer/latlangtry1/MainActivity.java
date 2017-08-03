@@ -35,7 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.d(TAG, "onCreate: Location  "   +  gpsTracker.getLocation() );
         gpsTracker  =   new GPSTracker(MainActivity.this);
-        Log.d(TAG, "onCreate: Latitude  :   "+gpsTracker.getLatitude());
-        Log.d(TAG, "onCreate: Longitude :   "+gpsTracker.getLongitude());
+//        Log.d(TAG, "onCreate: Latitude  :   "+gpsTracker.getLatitude());
+//        Log.d(TAG, "onCreate: Longitude :   "+gpsTracker.getLongitude());
+        Log.d(TAG, "onCreate: Location  :   "+gpsTracker.getLocation().toString());
     }
 }
